@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wordly Dictionary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main container for the dictionaries app -->
+    <div class="container">
+        <h1>Wordly Dictionary</h1>
+        <p>Search for word definitions</p>
+
+        <!-- Search form -->
+        <form id="searchForm">
+            <input type="text" id="wordInput" placeholder="Type a word here...">
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Loading message -->
+        <div id="loading" style="display: none;">Loading...</div>
+
+        <!-- Error message -->
+        <div id="error" style="display: none;"></div>
+
+        <!-- Results section -->
+        <div id="results" style="display: none;">
+            <h2 id="wordTitle"></h2>
+            <p id="pronunciation"></p>
+            <button id="audioBtn" style="display: none;">Play Sound</button>
+            <div id="definitions"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
